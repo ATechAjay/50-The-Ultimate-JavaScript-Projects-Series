@@ -12,7 +12,7 @@ function vowelCounter() {
 
           for (let a = 0; a < inputText.length; a++) {
                     let letter = inputText[a];
-                    if (letter.match(/[a,e,i,o,u]/)) {
+                    if (letter.match(/[aeiou]/)) {
                               count++;
                     }
           }
