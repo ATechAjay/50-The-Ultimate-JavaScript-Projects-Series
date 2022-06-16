@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  background: #f25113;
+}
+
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.output {
+  height: 200px;
+  width: 200px;
+  border: 0px solid #fff;
+  background: #10b910;
+}
+
+.range-slider {
+  width: 100%;
+  cursor: pointer;
+}
