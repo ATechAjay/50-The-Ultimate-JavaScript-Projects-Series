@@ -114,7 +114,7 @@ Build 50 awesome project using JavaScript
 
 - [ ] ⑤⑥ Toast Notification
 
-- [ ] ⑤⑦ Hidden Search Widget
+- [X] ⑤⑦ Search Bar Expand and Collapse
 
 - [ ] ⑤⑧ Page Progress
 
