@@ -1,7 +1,7 @@
 # 50-The-Ultimate-JavaScript-Projects-Series-
 Build 50 awesome project using JavaScript
 
-![Build 50 awesome project using JavaScript](/_images/presentation.jpg);
+![Build 50 awesome project using JavaScript](/_images/presentation.jpg)
 
 
 ## List of project names you can build with this repo
