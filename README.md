@@ -30,7 +30,7 @@ Build 50 awesome project using JavaScript
 
 - [ ] ①② Background Choosing With Images or Gradients
 
-- [ ] ①③ Auto Year Update In The Footer Section
+- [X] ①③ Auto Year Update In The Footer Section
 
 - [ ] ①④ Date CountDown
 

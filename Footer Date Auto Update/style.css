@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  /* background: #444; */
+}
+
+section {
+  height: 100vh;
+}
+
+.content {
+  height: 80vh;
+  border-bottom: 5px solid dodgerblue;
+}
+
+footer {
+  text-align: center;
+  margin-top: 8vh;
+  font-size: 24px;
+}
