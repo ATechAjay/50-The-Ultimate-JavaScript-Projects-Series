@@ -116,7 +116,7 @@ Build 50 awesome project using JavaScript
 
 - [X] ⑤⑦ Search Bar Expand and Collapse
 
-- [ ] ⑤⑧ Page Progress
+- [X] ⑤⑧ Progress Page Steps
 
 - [ ] ⑤⑨ Find Keyboard Keys Name
 
