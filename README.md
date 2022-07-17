@@ -124,4 +124,4 @@ Build 50 awesome project using JavaScript
 
 ___
 
-![One more Thing](_images/OneMoreThing.png)
+![One more Thing](_images/oneMoreThing.png)
