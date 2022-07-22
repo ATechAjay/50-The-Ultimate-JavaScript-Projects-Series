@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Card Expanding Design</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+      }
+      .parent {
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+      .card {
+        height: 70vh;
+        width: 10vh;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.5s ease-in;
+      }
+      .active {
+        width: 60vh;
+      }
+
+      div:nth-child(1) {
+        background: #9400d3;
+      }
+      div:nth-child(2) {
+        background: #4b0082;
+      }
+      div:nth-child(3) {
+        background: #0000ff;
+      }
+      div:nth-child(4) {
+        background: #00ff00;
+      }
+      div:nth-child(5) {
+        background: #ffff00;
+      }
+      div:nth-child(6) {
+        background: #ff7f00;
+      }
+      div:nth-child(7) {
+        background: #ff0000;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="parent">
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

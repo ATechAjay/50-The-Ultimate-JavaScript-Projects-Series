@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d69fb28507.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Hidden search bar by ATechAjay(Ajay Yadav)</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .parent {
+        position: relative;
+      }
+
+      .input {
+        padding: 5px 10px;
+        width: 40px;
+        font-size: ;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 100px;
+        letter-spacing: 0.5px;
+        transition: width 0.3s ease;
+      }
+
+      .input::placeholder {
+        color: dodgerblue;
+      }
+
+      .parent.active .input {
+        width: 200px;
+      }
+      .btn {
+        width: 40px;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 100px;
+        border: none;
+        background: dodgerblue;
+        display: inline;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform 0.3s ease;
+      }
+      .parent.active .btn {
+        transform: translateX(210px);
+      }
+      .fa-solid {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <input type="text" class="input" placeholder="Search..." />
+      <button class="btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+
+    <script>
+      let input = document.querySelector(".input");
+      let btn = document.querySelector(".btn");
+      let parent = document.querySelector(".parent");
+
+      btn.addEventListener("click", () => {
+        parent.classList.toggle("active");
+        input.focus();
+      });
+    </script>
+  </body>
+</html>
