@@ -33,7 +33,7 @@ html {
     #d9d9d9 0,
     #d9d9d9 20px,
     #d6d6d6 40px,
-    #d6d6d6 60px
+    #d6d6d6 100px
   );
   margin: 0 15rem;
   padding: 2rem;
@@ -52,6 +52,7 @@ html {
   background: #0197ee;
   display: grid;
   place-items: center;
+  margin: 1rem 0;
 }
 
 .controllers_container {
@@ -136,4 +137,107 @@ html {
 label,
 .shadow_output {
   user-select: none;
+}
+
+@media (max-width: 1031px) {
+  .box_shadow_container {
+    padding: 4rem;
+  }
+  .box_shadow_container {
+    margin: 0 12rem;
+  }
+  .container h1 {
+    font-size: 3.3rem;
+  }
+
+  .controllers_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: flex-start;
+  }
+
+  .primary_control_container {
+    width: 100%;
+  }
+  .secondry_control_container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .box_shadow_container {
+    padding: 1.2rem;
+  }
+
+  .shadow_output {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .box_shadow_container {
+    margin: 0 8rem;
+  }
+  .container h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 666px) {
+  .box_shadow_container {
+    padding: 1.2rem;
+  }
+
+  .shadow_output {
+    height: 5rem;
+    width: 5rem;
+    font-size: 1rem;
+  }
+  .container h1 {
+    font-size: 2.5rem;
+  }
+
+  .box_shadow_container {
+    margin: 0 4rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .box_shadow_container {
+    padding: 1rem;
+  }
+
+  .shadow_output {
+    height: 4rem;
+    width: 4rem;
+    font-size: 0.6rem;
+  }
+  .container h1 {
+    font-size: 1.8rem;
+  }
+
+  .box_shadow_container {
+    margin: 0 2rem;
+  }
+  .author > p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .box_shadow_container {
+    padding: 0.5rem;
+  }
+  .shadow_output {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 0.5rem;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+  }
+  .author > p {
+    font-size: 1rem;
+  }
 }
