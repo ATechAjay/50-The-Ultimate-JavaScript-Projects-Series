@@ -2,7 +2,7 @@
 
 Build 50 awesome project using JavaScript
 
-![Build 50 awesome project using JavaScript]('https://pbs.twimg.com/media/F3OJ_o0bcAApLD7?format=jpg')
+![Build 50 awesome project using JavaScript](https://pbs.twimg.com/media/F3OJ_o0bcAApLD7?format=jpg)
 
 ## List of project names you can build with this repo
 
