@@ -170,11 +170,6 @@ label,
     padding: 1.2rem;
   }
 
-  .shadow_output {
-    height: 6rem;
-    width: 6rem;
-  }
-
   .box_shadow_container {
     margin: 0 8rem;
   }
@@ -188,11 +183,6 @@ label,
     padding: 1.2rem;
   }
 
-  .shadow_output {
-    height: 5rem;
-    width: 5rem;
-    font-size: 1rem;
-  }
   .container h1 {
     font-size: 2.5rem;
   }
@@ -207,11 +197,6 @@ label,
     padding: 1rem;
   }
 
-  .shadow_output {
-    height: 4rem;
-    width: 4rem;
-    font-size: 0.6rem;
-  }
   .container h1 {
     font-size: 1.8rem;
   }
@@ -227,11 +212,7 @@ label,
 @media (max-width: 350px) {
   .box_shadow_container {
     padding: 0.5rem;
-  }
-  .shadow_output {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 0.5rem;
+    background: red;
   }
 
   .container h1 {
