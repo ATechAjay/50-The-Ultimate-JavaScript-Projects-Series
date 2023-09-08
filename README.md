@@ -121,5 +121,3 @@ Build 50 awesome project using JavaScript
 1. Find Keyboard Keys Name
 
 ---
-
-![One more Thing](/_images/OneMoreThing.png)
