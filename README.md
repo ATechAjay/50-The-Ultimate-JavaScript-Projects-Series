@@ -1,11 +1,10 @@
 # 50-The-Ultimate-JavaScript-Projects-Series-
+
 Build 50 awesome project using JavaScript
 
-![Build 50 awesome project using JavaScript](/_images/presentation.jpg)
-
+![Build 50 awesome project using JavaScript]('https://pbs.twimg.com/media/F3OJ_o0bcAApLD7?format=jpg')
 
 ## List of project names you can build with this repo
-
 
 1. :heavy_check_mark: **[Counter Number App](/01%20-%20Count%20Number%20App/)**
 
@@ -29,10 +28,9 @@ Build 50 awesome project using JavaScript
 
 1. :heavy_check_mark: **[Search Bar Expand and Collapse](11%20-%20Search%20Bar%20Expand%20&%20collapse)**
 
-1. :heavy_check_mark:  **[Auto Year Update In The Footer Section](12%20-%20Footer%20Date%20Auto%20Update)**
+1. :heavy_check_mark: **[Auto Year Update In The Footer Section](12%20-%20Footer%20Date%20Auto%20Update)**
 
-1. :heavy_check_mark:  **[Progress Page Steps](13%20-%20Progress%20Page%20Steps)**
-
+1. :heavy_check_mark: **[Progress Page Steps](13%20-%20Progress%20Page%20Steps)**
 
 1. Box Shadow Controller
 
@@ -121,6 +119,7 @@ Build 50 awesome project using JavaScript
 1. Toast Notification
 
 1. Find Keyboard Keys Name
-___
+
+---
 
 ![One more Thing](/_images/OneMoreThing.png)
