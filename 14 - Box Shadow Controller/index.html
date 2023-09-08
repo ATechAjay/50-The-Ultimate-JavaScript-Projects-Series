@@ -1,0 +1,70 @@
+<!-- box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; -->
+<!-- box-shadow: none|horizontal vertical blur spread color |inset|initial|inherit; -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Box-Shadow Controller</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Box-Shadow Controller</h1>
+      <section class="box_shadow_container">
+        <div class="shadow_output">Output</div>
+
+        <div class="controllers_container">
+          <div class="primary_control_container">
+            <div class="input_container">
+              <label for="h_shadow"> Horizontal Shadow </label>
+              <input id="h_shadow" type="range" />
+            </div>
+            <div class="input_container">
+              <label for="v_shadow"> Vertical Shadow </label>
+              <input id="v_shadow" type="range" />
+            </div>
+            <div class="input_container">
+              <label for="blur"> Blur Radius </label>
+              <input id="blur" type="range" />
+            </div>
+            <div class="input_container">
+              <label for="radius"> Spread Radius </label>
+              <input id="radius" type="range" />
+            </div>
+            <div class="input_container">
+              <label for="opacity"> Shadow Color Opacity </label>
+              <input id="opacity" type="range" />
+            </div>
+          </div>
+
+          <div class="secondry_control_container">
+            <div class="input_container">
+              <label for="color">Shadow Color</label>
+              <input id="color" type="color" />
+            </div>
+            <div class="input_container">
+              <label for="check">Inset Shadow</label>
+              <input id="check" type="checkbox" />
+            </div>
+            <div class="code_container input_container">
+              <label for="">Code 🔽</label>
+              <input
+                type="text"
+                value="box-shadow: ...values values values"
+                disabled
+              />
+              <button class="btn copy">Copy</button>
+            </div>
+            <div class="author">
+              <p>
+                Created with ❤️ by
+                <a href="#">Ajay Yadav</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

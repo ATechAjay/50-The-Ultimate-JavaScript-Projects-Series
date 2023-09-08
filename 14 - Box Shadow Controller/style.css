@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #333;
+  font-family: sans-serif;
+  font-size: 62.5%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container h1 {
+  /* This is how we can create gradient text color. */
+  color: transparent;
+  background: linear-gradient(to right, #ffffff, #00ddff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1rem;
+  font-size: 3.8rem;
+}
+
+.box_shadow_container {
+  /* This is how we can create stripe in CSS */
+  background-image: repeating-linear-gradient(
+    45deg,
+    #d9d9d9 0,
+    #d9d9d9 20px,
+    #d6d6d6 40px,
+    #d6d6d6 60px
+  );
+  margin: 0 15rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.shadow_output {
+  align-self: center;
+  height: 8rem;
+  width: 8rem;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background: #0197ee;
+  display: grid;
+  place-items: center;
+}
+
+.controllers_container {
+  margin: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.primary_control_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.primary_control_container > .input_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary_control_container > .input_container > label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+.primary_control_container {
+  width: 35%;
+}
+
+.secondry_control_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.secondry_control_container > .input_container > label {
+  font-size: 1.5rem;
+}
+
+.code_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.code_container > input {
+  padding: 0.7rem;
+  background: #c3c3c3;
+  color: #000000;
+  border-radius: 0.3rem;
+  outline: none;
+  border: none;
+}
+
+.code_container > .btn {
+  background: #0197ee;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 0.05s;
+}
+
+.code_container > .btn:active {
+  scale: 0.98;
+}
+
+.author > p {
+  font-size: 1.5rem;
+  transition: all 0.05s;
+}
+
+.author > p > a {
+  color: #b40000;
+  /* Awesome property to create gap between anchor tag and below underline */
+  text-underline-offset: 5px;
+}
+.author > p > a:hover {
+  text-decoration: none;
+}
+
+label,
+.shadow_output {
+  user-select: none;
+}
