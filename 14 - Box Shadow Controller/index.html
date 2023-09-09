@@ -1,4 +1,3 @@
-<!-- box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; -->
 <!-- box-shadow: none|horizontal vertical blur spread color |inset|initial|inherit; -->
 <!DOCTYPE html>
 <html lang="en">
@@ -16,25 +15,63 @@
 
         <div class="controllers_container">
           <div class="primary_control_container">
+            <div class="input_container output_bg">
+              <label for="output_bg">Output Bg-Color </label>
+              <input id="output_bg" type="color" />
+            </div>
+
+            <div class="input_container">
+              <label for="border_radius">Output Border-Radius</label>
+              <input
+                id="border_radius"
+                type="range"
+                value="5"
+                max="50"
+                min="0"
+                step=".1"
+              />
+            </div>
+            <hr />
             <div class="input_container">
               <label for="h_shadow"> Horizontal Shadow </label>
-              <input id="h_shadow" type="range" />
+              <input
+                id="h_shadow"
+                type="range"
+                value="0"
+                max="100"
+                min="-100"
+                step=".1"
+              />
             </div>
             <div class="input_container">
               <label for="v_shadow"> Vertical Shadow </label>
-              <input id="v_shadow" type="range" />
+              <input
+                id="v_shadow"
+                type="range"
+                value="0"
+                max="100"
+                min="-100"
+                step=".1"
+              />
             </div>
             <div class="input_container">
               <label for="blur"> Blur Radius </label>
-              <input id="blur" type="range" />
+              <input id="blur" type="range" value="10" />
             </div>
             <div class="input_container">
-              <label for="radius"> Spread Radius </label>
-              <input id="radius" type="range" />
+              <label for="spread"> Spread Radius </label>
+              <input id="spread" type="range" value="0" />
             </div>
             <div class="input_container">
               <label for="opacity"> Shadow Color Opacity </label>
-              <input id="opacity" type="range" />
+              <input
+                id="opacity"
+                type="range"
+                value="0.5"
+                max="1"
+                min="0"
+                step=".01"
+              />
             </div>
           </div>
 
@@ -47,24 +84,26 @@
               <label for="check">Inset Shadow</label>
               <input id="check" type="checkbox" />
             </div>
+            <hr />
             <div class="code_container input_container">
               <label for="">Code 🔽</label>
               <input
                 type="text"
                 value="box-shadow: ...values values values"
-                disabled
+                id="code"
               />
               <button class="btn copy">Copy</button>
             </div>
             <div class="author">
               <p>
-                Created with ❤️ by
-                <a href="#">Ajay Yadav</a>
+                Made with ❤️ by
+                <a href="https://twitter.com/ATechAjay">Ajay Yadav</a>
               </p>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
