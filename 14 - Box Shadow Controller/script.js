@@ -91,6 +91,8 @@ function copyCode(event) {
 
     // Setting timeout to come back to initial state of the button.
     setTimeout(function () {
+      code.blur();
+      // Deselect the text text after 3 seconds.
       copyBtn.textContent = "Copy";
       // Change back to 'Copy' text
       copyBtn.style.backgroundColor = "#0197ee";
