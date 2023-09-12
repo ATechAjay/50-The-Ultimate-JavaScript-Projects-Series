@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Filter This Image</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Filter this image</h1>
+      <section class="filter_container">
+        <div class="output_container">
+          <img src="../_images/aj.png" alt="Ajay Yadav, (ATechAjay)" />
+        </div>
+
+        <div class="filter_control_container">
+          <div class="filter_primary_control_container">
+            <div class="input_container">
+              <label for="">Grayscale (0-100%):</label>
+              <input type="range" step="1" min="0" max="100" />
+            </div>
+
+            <div class="input_container">
+              <label for="">Blur (0-20px):</label>
+              <input type="range" step="0.5" min="0" max="20" />
+            </div>
+
+            <div class="input_container">
+              <label for="">Brightness (0-200%):</label>
+              <input type="range" step="1" min="0" max="200" />
+            </div>
+
+            <div class="input_container">
+              <label for="">Contrast (0-200%):</label>
+              <input type="range" step="1" min="0" max="200" />
+            </div>
+
+            <div class="input_container">
+              <label for="">Hue Rotate (0-360deg):</label>
+              <input type="range" step="1" min="0" max="360" />
+            </div>
+
+            <div class="input_container">
+              <label for="">Invert (0-100%):</label>
+              <input type="range" step="1" min="0" max="100" />
+            </div>
+
+            <div class="input_container">
+              <label for="">Opacity (0-100%):</label>
+              <input type="range" step="1" min="0" max="100" />
+            </div>
+
+            <div class="input_container">
+              <label for="">Saturate (0-100%):</label>
+              <input type="range" step="1" min="0" max="100" />
+            </div>
+
+            <div class="input_container">
+              <label for="">Sepia (0-100%):</label>
+              <input type="range" step="1" min="0" max="100" />
+            </div>
+          </div>
+
+          <div class="filter_secondry_control_container">
+            <div class="input_container like_inline_element">
+              <label for="">Add Drop Shadow:</label>
+              <input type="checkbox" />
+            </div>
+
+            <div class="input_container">
+              <label for="">Horizontal Drop-Shadow (0-100px):</label>
+              <input type="range" step="1" min="0" max="100" />
+            </div>
+            <div class="input_container">
+              <label for="">Vertical Drop-Shadow (0-100px):</label>
+              <input type="range" step="1" min="0" max="100" />
+            </div>
+
+            <div class="input_container">
+              <label for="">Drop-Shadow Blur (0-100px):</label>
+              <input type="range" step="1" min="0" max="100" />
+            </div>
+
+            <div class="input_container like_inline_element">
+              <label for="">Drop-Shadow Color: </label>
+              <input type="color" />
+            </div>
+
+            <div class="code_container">
+              <label for="">Code 🔽</label>
+              <div class="code">
+                <textarea name="code" id="" cols="30" rows="4" disabled>
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae ab quibusdam unde vel nihil dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae ab quibusdam unde vel nihil dolorum.</textarea
+                >
+                <button>Copy</button>
+              </div>
+            </div>
+
+            <footer class="author">
+              <p>
+                Made with ❤️ by
+                <a href="https://twitter.com/ATechAjay">Ajay Yadav</a>
+              </p>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+.container {
+  background: #333;
+  padding: 2rem 10rem;
+}
+
+.container > h1 {
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: transparent;
+  background: linear-gradient(to right, rgb(255, 77, 77), rgb(71, 200, 255));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.filter_container {
+  background: #d9d9d9;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.output_container {
+  align-self: center;
+  margin: 2rem 0;
+}
+
+.output_container > img {
+  height: 20rem;
+  border-radius: 300px;
+  border: 3px solid #000;
+}
+
+.filter_control_container {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.filter_primary_control_container {
+  width: 40%;
+}
+
+.filter_primary_control_container > .input_container,
+.filter_secondry_control_container > .input_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter_secondry_control_container > .like_inline_element {
+  flex-direction: row;
+}
+
+.input_container > label,
+.code_container > label {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  /* color: red; */
+}
+
+.filter_primary_control_container,
+.filter_secondry_control_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}

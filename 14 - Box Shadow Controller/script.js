@@ -2,10 +2,11 @@ const output = document.querySelector(".shadow_output");
 // Select the output element.
 const code = document.getElementById("code");
 // Select the code element.
-const inputs = document.querySelectorAll(".input_container input");
+const inputs = document.querySelectorAll(".input_container input"); //NodeList
 // Select all input elements. That is an array of node.
 const copyBtn = document.querySelector(".copy");
 // Select the copy code button.
+
 inputs.forEach(
   (eachInput) => eachInput.addEventListener("input", createShadow)
   // Listening input event on each input element, and executing the callback function.
@@ -83,6 +84,7 @@ function copyCode(event) {
 
   navigator.clipboard.writeText(code.value).then(() => {
     code.select();
+    code.focus();
     // Selecting the text of the code.
     copyBtn.textContent = "Copied";
     // Changing the text of the button.
