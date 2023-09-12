@@ -8,7 +8,9 @@ body {
   font-size: 62.5%;
   font-family: sans-serif;
 }
-
+hr {
+  margin: 10px 0;
+}
 .container {
   background: #333;
   padding: 2rem 10rem;
@@ -110,7 +112,7 @@ body::-webkit-scrollbar-thumb {
   background: none;
   position: absolute;
   top: 5px;
-  right: 20px;
+  right: 10px;
   border: none;
   padding: 0.5rem 0.8rem;
   cursor: pointer;
@@ -131,4 +133,65 @@ body::-webkit-scrollbar-thumb {
 .author > p > a {
   color: red;
   text-underline-offset: 4px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 2rem 6rem;
+  }
+  .filter_control_container {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    padding: 2rem 5rem;
+  }
+
+  .filter_primary_control_container {
+    width: 100%;
+  }
+  .filter_control_container {
+    flex-direction: column;
+  }
+  .container > h1 {
+    font-size: 3.8rem;
+  }
+  .code_container > .code > textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .container > h1 {
+    font-size: 2.8rem;
+  }
+
+  .input_container > label,
+  .code_container > label {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 385px) {
+  .container {
+    background: green;
+  }
+
+  .container > h1 {
+    font-size: 2rem;
+  }
+  .input_container > label,
+  .code_container > label {
+    font-size: 1.2rem;
+  }
+
+  .filter_control_container {
+    padding: 1rem;
+  }
 }
