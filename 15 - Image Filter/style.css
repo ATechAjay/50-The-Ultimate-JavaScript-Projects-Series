@@ -94,6 +94,18 @@ body {
   resize: none;
 }
 
+textarea::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: #005cc8;
+  border-radius: 100px;
+}
+
 .code_container > .code > .copy_btn {
   background: none;
   position: absolute;
@@ -111,9 +123,11 @@ body {
 .code_container > .code > .copy_btn:active {
   scale: 0.97;
 }
+
 .author > p {
   font-size: 1.5rem;
 }
+
 .author > p > a {
   color: red;
   text-underline-offset: 4px;
