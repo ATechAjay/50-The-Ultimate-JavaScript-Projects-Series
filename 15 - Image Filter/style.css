@@ -47,7 +47,7 @@ body {
 .filter_control_container {
   padding: 1rem 3rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .filter_primary_control_container {
@@ -76,4 +76,45 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+}
+
+.code_container > .code {
+  margin-top: 0.8rem;
+  position: relative;
+}
+
+.code_container > .code > textarea {
+  background: red;
+  padding: 0.8rem;
+  outline: none;
+  border: none;
+  background: #f7f7fc;
+  color: #000000;
+  border-radius: 0.5rem;
+  resize: none;
+}
+
+.code_container > .code > .copy_btn {
+  background: none;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 100px;
+  border: 2px solid #005cc8;
+  color: #005cc8;
+}
+
+.code_container > .code > .copy_btn:active {
+  scale: 0.97;
+}
+.author > p {
+  font-size: 1.5rem;
+}
+.author > p > a {
+  color: red;
+  text-underline-offset: 4px;
 }
