@@ -179,12 +179,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 385px) {
-  .container {
-    background: green;
-  }
-
   .container > h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .input_container > label,
   .code_container > label {
