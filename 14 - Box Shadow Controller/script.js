@@ -1,6 +1,7 @@
 const output = document.querySelector(".shadow_output");
 // Select the output element.
 const code = document.getElementById("code");
+
 // Select the code element.
 const inputs = document.querySelectorAll(".input_container input"); //NodeList
 // Select all input elements. That is an array of node.

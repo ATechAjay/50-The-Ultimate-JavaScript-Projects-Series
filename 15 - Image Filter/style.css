@@ -38,12 +38,15 @@ hr {
 .output_container {
   align-self: center;
   margin: 2rem 0;
+  border: 3px solid #000;
+  border-radius: 300px;
+  /* background: red; */
+  overflow: hidden;
 }
 
 .output_container > img {
-  height: 20rem;
-  border-radius: 300px;
-  border: 3px solid #000;
+  height: 21rem;
+  scale: 1.01;
 }
 
 .filter_control_container {
@@ -80,6 +83,18 @@ hr {
   gap: 1.2rem;
 }
 
+.reset {
+  border: none;
+  background: red;
+  color: #fff;
+  padding: 0.5rem 0;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.reset:active {
+  scale: 0.97;
+}
 .code_container > .code {
   margin-top: 0.8rem;
   position: relative;
@@ -120,8 +135,13 @@ body::-webkit-scrollbar-thumb {
   border-radius: 100px;
   border: 2px solid #005cc8;
   color: #005cc8;
+  transition: all 0.2s;
 }
 
+.code_container > .code > .copy_btn:hover {
+  background: #005cc8;
+  color: #fff;
+}
 .code_container > .code > .copy_btn:active {
   scale: 0.97;
 }
@@ -134,7 +154,11 @@ body::-webkit-scrollbar-thumb {
   color: red;
   text-underline-offset: 4px;
 }
+.author > p > a:hover {
+  text-decoration: none;
+}
 
+/* Making Responsive */
 @media (max-width: 1000px) {
   .container {
     padding: 2rem 6rem;
