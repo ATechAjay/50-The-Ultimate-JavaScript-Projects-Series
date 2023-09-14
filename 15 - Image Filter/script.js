@@ -1,7 +1,17 @@
 const image = document.querySelector(".output_container img");
-
-const code = document.querySelector(".code textarea");
-// console.log(code.value);
+// console.log(image.style);
+const code = document.querySelector(".code code");
+// console.log(code.textContent);
+// code.textContent = `
+// img {
+//   color: yellow;
+//   color: yellow;
+//   color: yellow;
+//   color: yellow;
+//   color: yellow;
+// }
+// `;
+// console.log(code.textContent);
 const allInputs = document.querySelectorAll(".input_container input");
 
 const label = document.querySelector("label");
@@ -48,7 +58,7 @@ function filterImage() {
   //   filter property syntax:
   //   filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();
 
-  let filterValues = `    
+  let filterValues = `
   grayscale(${grayScale + "%"})
   blur(${blur + "px"})
   brightness(${brightness + "%"})
@@ -57,24 +67,19 @@ function filterImage() {
   invert(${invert + "%"})
   opacity(${opacity + "%"})
   saturate(${saturate + "%"})
-  sepia(${sepia + "%"})
-`;
+  sepia(${sepia + "%"})`;
 
   let filterDropShadowValue = `
 drop-shadow(${horizontalShadow + "px"} ${verticalShadow + "px"} ${
     dropShadowBlur + "px"
-  } ${hexToRgba(hexColor, dropShadowOpacity)}
-          )  
-`;
+  } ${hexToRgba(hexColor, dropShadowOpacity)})`;
 
   //   image.style.filter = `...`
 
   isDropShadow
     ? (image.style.filter = `
       ${filterValues}
-      ${filterDropShadowValue}
-      
-      `)
+      ${filterDropShadowValue}`)
     : (image.style.filter = `
     ${filterValues}
     `);

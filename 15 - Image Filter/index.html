@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="code_theme/prism.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Filter This Image</title>
   </head>
@@ -189,24 +190,21 @@
               />
             </div>
             <hr />
-            <button class="reset">Reset</button>
+            <button class="reset">Reset Filter</button>
             <hr />
             <div class="code_container">
               <label for="code">Code 🔽</label>
-              <div class="code">
-                <textarea
-                  name="code"
-                  id="code"
-                  cols="30"
-                  rows="4"
-                  disabled
-                  value="Dynamic"
-                >
-Code Goes here...</textarea
-                >
-                <button class="copy_btn">Copy</button>
-              </div>
+              <pre id="code" class="language-css code"><code >
+img { 
+   color: red; 
+   color: red; 
+   color: red; 
+   color: red; 
+   color: red;
+}</code>
+</pre>
             </div>
+            <button class="copy_btn">Copy the code</button>
             <hr />
 
             <footer class="author">
@@ -219,6 +217,7 @@ Code Goes here...</textarea
         </div>
       </section>
     </main>
+    <script src="code_theme/prism.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -40,7 +40,6 @@ hr {
   margin: 2rem 0;
   border: 3px solid #000;
   border-radius: 300px;
-  /* background: red; */
   overflow: hidden;
 }
 
@@ -52,11 +51,7 @@ hr {
 .filter_control_container {
   padding: 1rem 3rem;
   display: flex;
-  justify-content: space-around;
-}
-
-.filter_primary_control_container {
-  width: 40%;
+  justify-content: space-evenly;
 }
 
 .filter_primary_control_container > .input_container,
@@ -73,7 +68,6 @@ hr {
 .code_container > label {
   font-size: 1.5rem;
   margin-bottom: 0.8rem;
-  /* color: red; */
 }
 
 .filter_primary_control_container,
@@ -97,52 +91,31 @@ hr {
 }
 .code_container > .code {
   margin-top: 0.8rem;
-  position: relative;
+  font-size: 1.4rem;
+}
+.code_container > .code > code {
+  text-wrap: wrap;
 }
 
-.code_container > .code > textarea {
-  background: red;
-  padding: 0.8rem;
-  outline: none;
+.copy_btn {
   border: none;
-  background: #f7f7fc;
-  color: #000000;
-  border-radius: 0.5rem;
-  resize: none;
-}
-
-textarea::-webkit-scrollbar,
-body::-webkit-scrollbar {
-  width: 5px;
-  background: transparent;
-}
-
-textarea::-webkit-scrollbar-thumb,
-body::-webkit-scrollbar-thumb {
-  background: #005cc8;
-  border-radius: 100px;
-}
-
-.code_container > .code > .copy_btn {
-  background: none;
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  border: none;
-  padding: 0.5rem 0.8rem;
+  padding: 0.7rem 0;
   cursor: pointer;
   user-select: none;
   border-radius: 100px;
-  border: 2px solid #005cc8;
-  color: #005cc8;
+  border: 2px solid gray;
+  color: gray;
   transition: all 0.2s;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
-.code_container > .code > .copy_btn:hover {
-  background: #005cc8;
+.copy_btn:hover {
+  background: dodgerblue;
+  border: 2px solid dodgerblue;
   color: #fff;
 }
-.code_container > .code > .copy_btn:active {
+.copy_btn:active {
   scale: 0.97;
 }
 
