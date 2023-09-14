@@ -1,17 +1,8 @@
 const image = document.querySelector(".output_container img");
 // console.log(image.style);
 const code = document.querySelector(".code code");
-// console.log(code.textContent);
-// code.textContent = `
-// img {
-//   color: yellow;
-//   color: yellow;
-//   color: yellow;
-//   color: yellow;
-//   color: yellow;
-// }
-// `;
-// console.log(code.textContent);
+const test = document.querySelector(".code");
+// console.log(code);
 const allInputs = document.querySelectorAll(".input_container input");
 
 const label = document.querySelector("label");
@@ -74,8 +65,6 @@ drop-shadow(${horizontalShadow + "px"} ${verticalShadow + "px"} ${
     dropShadowBlur + "px"
   } ${hexToRgba(hexColor, dropShadowOpacity)})`;
 
-  //   image.style.filter = `...`
-
   isDropShadow
     ? (image.style.filter = `
       ${filterValues}
@@ -83,6 +72,28 @@ drop-shadow(${horizontalShadow + "px"} ${verticalShadow + "px"} ${
     : (image.style.filter = `
     ${filterValues}
     `);
+
+  const codeSnippet = usedFilterProperty(
+    grayScale,
+    blur,
+    brightness,
+    contrast,
+    hue,
+    invert,
+    opacity,
+    saturate,
+    sepia
+  );
+
+  code.textContent = isDropShadow
+    ? `img {
+    ${codeSnippet + filterDropShadowValue}
+}`
+    : `img {
+  ${codeSnippet}
+}`;
+
+  Prism.highlightAll();
 }
 
 function hexToRgba(hexColor, dropShadowOpacity) {
@@ -92,8 +103,60 @@ function hexToRgba(hexColor, dropShadowOpacity) {
   return `rgba(${red}, ${green}, ${blue}, ${dropShadowOpacity})`;
 }
 
+function usedFilterProperty(
+  grayScale,
+  blur,
+  brightness,
+  contrast,
+  hue,
+  invert,
+  opacity,
+  saturate,
+  sepia
+) {
+  const filterProps = {
+    grayscale: { value: +grayScale, unit: "%" },
+    blur: { value: +blur, unit: "px" },
+    brightness: { value: +brightness, unit: "%" },
+    contrast: { value: +contrast, unit: "%" },
+    hueRotate: { value: +hue, unit: "deg" },
+    invert: { value: +invert, unit: "%" },
+    opacity: { value: +opacity, unit: "%" },
+    saturate: { value: +saturate, unit: "%" },
+    sepia: { value: +sepia, unit: "%" },
+  };
+
+  let filterValueInUsed = "";
+
+  for (const filterProperty in filterProps) {
+    const { value, unit } = filterProps[filterProperty];
+    if (value) {
+      filterValueInUsed += `${filterProperty}(${value}${unit}) `;
+    }
+  }
+  return filterValueInUsed;
+}
+
 reset.addEventListener("click", function () {
+  alert("Reset will refresh the page. ⚠️");
   window.location.reload();
 });
 
+function copyCode(event) {
+  event.preventDefault();
+  navigator.clipboard.writeText(code.textContent).then(() => {
+    copyBtn.textContent = "Code copied";
+    copyBtn.style.backgroundColor = "green";
+    copyBtn.style.border = "2px solid green";
+    copyBtn.style.color = "#fff";
+    setTimeout(function () {
+      copyBtn.textContent = "Copy the code";
+      copyBtn.style.backgroundColor = "#fff";
+      copyBtn.style.border = "2px solid gray";
+      copyBtn.style.color = "gray";
+    }, 3000);
+  });
+}
+
+copyBtn.addEventListener("click", copyCode);
 window.onload = filterImage();
