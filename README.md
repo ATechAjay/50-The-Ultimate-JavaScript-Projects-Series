@@ -40,7 +40,7 @@ Build 50 awesome project using JavaScript
 
 1. Click To Download Something
 
-1. Background Choosing With Images or Gradients
+1. Background Choosing With Images and Gradients
 
 1. Date CountDown
 

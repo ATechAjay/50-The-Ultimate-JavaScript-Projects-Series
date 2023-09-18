@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  font-family: sans-serif;
+  font-size: 62.5%;
+}
+
+.container {
+  margin: 2rem 7rem;
+  background: #000000;
+  border-radius: 1rem;
+}
+
+.container h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4.8rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.app_container {
+  /* background: green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.app_container > .output {
+  height: 30rem;
+  border: 2px solid #fff;
+  background: purple;
+  border-radius: 1rem;
+}
+.app_container > .bg-container,
+.app_container > .output {
+  width: 60%;
+}
+
+.bg-container {
+  padding: 0 30px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bg-box {
+  height: 60px;
+  width: 100px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-box:nth-child(1) {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+.bg-box:nth-child(2) {
+  background: linear-gradient(to right, #ff0099, #493240);
+}
+
+.bg-box:nth-child(3) {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+}
+
+.bg-box:nth-child(4) {
+  background: linear-gradient(to right, #fc466b, #3f5efb);
+}
+
+.bg-box:nth-child(5) {
+  background: linear-gradient(to right, #00f260, #0575e6);
+}
+
+.bg-box:nth-child(6) {
+  background: linear-gradient(to right, #005c97, #363795);
+}
+
+.bg-box:nth-child(7) {
+  background: linear-gradient(to right, #7f00ff, #e100ff);
+}
+
+.bg-box:nth-child(8) {
+  background-image: url("./images/1.jpg");
+}
+
+.bg-box:nth-child(9) {
+  background-image: url("./images/2.jpg");
+}
+
+.bg-box:nth-child(10) {
+  background-image: url("./images/3.jpg");
+}
+
+.bg-box:nth-child(11) {
+  background-image: url("./images/4.jpg");
+}
+
+.bg-box:nth-child(12) {
+  background-image: url("./images/5.jpg");
+}
+
+.bg-box:nth-child(13) {
+  background-image: url("./images/6.jpg");
+}
+
+.bg-box:nth-child(14) {
+  background-image: url("./images/7.jpg");
+}
+
+footer p {
+  color: #d9d9d9;
+  font-size: 2.8rem;
+  margin: 1rem 0 3rem 0;
+}
+
+footer p a {
+  color: red;
+  text-underline-offset: 12px;
+}
+footer p a:hover {
+  text-decoration: none;
+}
+
+/* Responsivnes */
+@media (max-width: 1230px) {
+  .container h1 {
+    font-size: 3.5rem;
+  }
+  .app_container > .bg-container,
+  .app_container > .output {
+    width: 90%;
+  }
+
+  footer p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 940px) {
+  .container {
+    margin: 2rem 4rem;
+  }
+  .container h1 {
+    font-size: 3rem;
+  }
+  .app_container > .bg-container,
+  .app_container > .output {
+    width: 90%;
+  }
+
+  footer p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .container {
+    margin: 2rem 3rem;
+  }
+
+  .app_container > .output {
+    height: 20rem;
+  }
+  .container h1 {
+    font-size: 2.5rem;
+  }
+  .app_container > .bg-container,
+  .app_container > .output {
+    width: 90%;
+  }
+
+  footer p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .container {
+    margin: 2rem;
+  }
+
+  .app_container > .output {
+    height: 17rem;
+  }
+  .container h1 {
+    font-size: 2rem;
+  }
+  .app_container > .bg-container,
+  .app_container > .output {
+    width: 90%;
+  }
+
+  footer p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .container {
+    margin: 2rem;
+  }
+
+  .app_container > .output {
+    height: 13rem;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+  }
+  .app_container > .bg-container,
+  .app_container > .output {
+    width: 80%;
+  }
+
+  footer p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    margin: 1rem;
+  }
+
+  .app_container > .output {
+    height: 12rem;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+  }
+  .app_container > .bg-container,
+  .app_container > .output {
+    width: 90%;
+  }
+
+  footer p {
+    font-size: 1.3rem;
+  }
+}
