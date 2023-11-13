@@ -42,9 +42,9 @@ Build 50 awesome project using JavaScript
 
 1. Background Choosing With Images and Gradients
 
-1. Date CountDown
+1. Date CountDown & CountUp
 
-1. Time CountDown
+1. Time CountDown & CountUp
 
 1. Smooth Scrolling
 

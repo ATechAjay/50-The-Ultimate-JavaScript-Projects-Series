@@ -111,12 +111,8 @@ drop-shadow(${horizontalShadow + "px"} ${verticalShadow + "px"} ${
   // Otherwise, just display only filter functions except drop-shadow.
 
   code.textContent = isDropShadow
-    ? `img {
-    ${codeSnippet + filterDropShadowValue}
-}`
-    : `img {
-  ${codeSnippet}
-}`;
+    ? `img {${codeSnippet + filterDropShadowValue}}`
+    : `img {${codeSnippet}}`;
 
   // Step 11: Re-highlight all code blocks on the page.
   Prism.highlightAll();
@@ -173,6 +169,7 @@ reset.addEventListener("click", function () {
   window.location.reload();
 });
 
+// 12. Copy to clipboard
 function copyCode(event) {
   event.preventDefault();
   navigator.clipboard.writeText(code.textContent).then(() => {
@@ -190,4 +187,4 @@ function copyCode(event) {
 }
 
 copyBtn.addEventListener("click", copyCode);
-window.onload = filterImage();
+window.onload = filterImage;
