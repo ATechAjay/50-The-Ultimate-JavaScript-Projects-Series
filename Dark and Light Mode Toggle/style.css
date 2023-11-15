@@ -1,0 +1,28 @@
+body {
+  transition: all 0.5s;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+.dark-mode {
+  background: #333;
+  color: #fff;
+}
+.dark-mode button {
+  background: aqua;
+}
+button {
+  background: dodgerblue;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.fa-solid {
+  color: #000;
+}

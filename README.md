@@ -70,7 +70,7 @@ Build 50 awesome project using JavaScript
 
 1. Currency Converter
 
-1. Dark & Light Mode Toggle
+1. Dark and Light Mode Toggle
 
 1. Alert & Notification
 
