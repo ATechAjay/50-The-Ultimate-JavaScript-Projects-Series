@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  font-size: 62.5%;
+  background: #333;
+  color: #fff;
+  /* height: 100vh; */
+  width: 100vw;
+  font-family: sans-serif;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: transparent;
+  background: linear-gradient(16deg, #4285f4, #9b72cb, #d96570, #4285f4);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.container {
+  background: #ececec;
+  width: 50%;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.date_container {
+  background: #000000;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.date_label,
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.result > p > span {
+  padding: 3px 10px;
+  border-radius: 4px;
+  background: aqua;
+  color: #000;
+}
+
+.date_controls {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.input {
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.dates_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dates_container label {
+  color: #000;
+  font-size: 0.8rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem 0;
+  font-weight: bold;
+  border: none;
+  background: dodgerblue;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+  font-size: 1.2rem;
+  color: #000;
+  text-align: center;
+}
+
+footer p a {
+  color: red;
+  text-underline-offset: 6px;
+  transition: all 0.1s;
+}
+footer p a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 1250px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 588px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .dates_container {
+    justify-content: space-between;
+  }
+
+  .date_controls {
+    width: 100%;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .dates_container {
+    flex-direction: column;
+    gap: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .dates_container input {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .date_container {
+    padding: 0.8rem;
+    gap: 8px;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+}

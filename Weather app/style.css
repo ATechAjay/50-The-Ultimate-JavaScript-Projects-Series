@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #333;
+  color: #e3e3e3;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 4.8rem;
+  text-align: center;
+  margin: 1.8rem 0;
+}

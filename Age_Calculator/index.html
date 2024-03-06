@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <h1>Calculate the age</h1>
+
+    <main class="container">
+      <div class="date_container">
+        <div class="date_label">
+          <p>Year:</p>
+          <p>Month:</p>
+          <p>Day:</p>
+          <p>Week:</p>
+          <p>Hour:</p>
+          <p>Minute:</p>
+          <p>Second:</p>
+          <p>Milli.Sec:</p>
+        </div>
+        <div class="result">
+          <p><span class="year">0</span> Year</p>
+          <p><span class="month">0</span> Month</p>
+          <p><span class="day">0</span> Day</p>
+          <p><span class="week">0</span> Week</p>
+          <p><span class="hour">0</span> Hour</p>
+          <p><span class="minute">0</span> Min</p>
+          <p><span class="second">0</span> Sec</p>
+          <p><span class="millisec">0</span> M.Sec</p>
+        </div>
+      </div>
+      <div class="date_controls">
+        <div class="dates_container">
+          <div class="date present_date_container">
+            <label for="present">Current date:</label>
+            <input
+              class="input"
+              type="date"
+              name=""
+              id="present"
+              value="2001-09-22"
+            />
+          </div>
+
+          <div class="date past_date_container">
+            <label for="past">My D.O.B:</label>
+            <input
+              class="input"
+              type="date"
+              name=""
+              id="past"
+              value="2001-10-22"
+            />
+          </div>
+        </div>
+        <button class="btn">Age Calculate</button>
+      </div>
+      <footer>
+        <p>
+          Made with ❤️ by
+          <a href="https://twitter.com/ATechAjay">Ajay Yadav</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
