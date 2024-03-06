@@ -17,9 +17,19 @@ const Milliseconds = year * 365 * 24 * 60 * 60 * 1000;
 ```js
 let year = 22;
 
-// Millisecond to second
+// Millisecond to specific date units.
 const msToSec = (year * 365 * 24 * 60 * 60 * 1000) / 1000;
 const msToMin = (year * 365 * 24 * 60 * 60 * 1000) / (1000 * 60);
 const msToHrs = (year * 365 * 24 * 60 * 60 * 1000) / (1000 * 60 * 60);
 const msToDay = (year * 365 * 24 * 60 * 60 * 1000) / (1000 * 60 * 24);
+```
+
+```js
+const msToSec = Math.abs(ms / 1000);
+const msToMin = Math.abs(ms / (1000 * 60));
+const msToHrs = Math.abs(ms / (1000 * 60 * 60));
+const daysFromTimeStamp = Math.abs(ms / (1000 * 60 * 60 * 24));
+const yearFromDays = daysFromTimeStamp / 365;
+const monthFromYear = yearFromDays * 12;
+const weekFromDays = daysFromTimeStamp / 7;
 ```
