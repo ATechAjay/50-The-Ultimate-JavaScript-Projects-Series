@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color: transparent;
+  background: linear-gradient(45deg, yellow, aqua, white);
+  background-clip: text;
+}
+
+.main {
+  display: flex;
+  background: purple;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 1.8rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.input_container {
+  background: #000;
+  border-radius: 10px 10px 0 0;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.input_container div {
+  width: calc(33.33%);
+}
+
+label {
+  margin-bottom: 1rem;
+}
+
+#from,
+#to,
+#amount {
+  border-radius: 5px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+}
+
+.from,
+.to,
+.amount {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.output {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.output p {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+@media (max-width: 900px) {
+  .main {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .output p {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .output {
+    flex-direction: column;
+  }
+
+  .output p {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .input_container {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .input_container div {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .output {
+    flex-direction: column;
+  }
+
+  .output p {
+    font-size: 2.5rem;
+  }
+}

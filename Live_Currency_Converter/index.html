@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" type="module" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Live Currency Converter</title>
+  </head>
+  <body>
+    <h1>Live Currency Converter</h1>
+    <main class="main">
+      <div class="input_container">
+        <div class="amount">
+          <label for="amount">Amount</label>
+          <input
+            type="number"
+            value="1"
+            step="10"
+            class="currencyValue"
+            id="amount"
+          />
+        </div>
+
+        <div class="from">
+          <label for="from">From</label>
+          <select name="" id="from">
+            <!-- dummay option -->
+            <option value="USD">USD</option>
+          </select>
+        </div>
+
+        <div class="to">
+          <label for="to">To</label>
+          <select name="" id="to">
+            <!-- dummay option -->
+            <option value="INR">INR</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="output">
+        <p class="oneUnit">0 USD = 00.000 INR</p>
+        <p class="totalResult">000 USD = 0000.000 INR</p>
+      </div>
+    </main>
+  </body>
+</html>
