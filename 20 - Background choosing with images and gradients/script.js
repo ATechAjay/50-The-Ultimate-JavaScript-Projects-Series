@@ -6,6 +6,9 @@ const setGradient = (gradient) => {
   gradient.addEventListener("click", function () {
     const getBgColor = window.getComputedStyle(gradient);
     output.style.background = getBgColor.background;
+    // console.log(getBgColor.background.split('("')[1].split('")')[0]);
+
+    // str.split('("')[1].split('")')[0]
   });
 };
 

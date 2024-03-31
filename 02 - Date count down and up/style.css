@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(#00000060, #00000060),
+    url("./../_images/2025.jpg") no-repeat center center/cover;
+  text-align: center;
+
+  padding: 0 5rem;
+}
