@@ -229,3 +229,8 @@ label,
     font-size: 1rem;
   }
 }
+
+.highlighted {
+  border: 8px solid red;
+  padding: 20px;
+}

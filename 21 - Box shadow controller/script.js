@@ -107,3 +107,68 @@ copyBtn.addEventListener("click", copyCode);
 // Listening the event during clicking on the button.
 window.onload = createShadow();
 // Loding the intial box-shadow design defined by me, when you open this page.
+
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+
+document.addEventListener("DOMContentLoaded", () => {
+  const nextButton = document.getElementById("next");
+  const prevButton = document.getElementById("prev");
+
+  let currentElement = document.querySelector("main");
+  let elements = [];
+
+  function getAllDescendants(element) {
+    let descendants = [];
+    for (let child of element.children) {
+      descendants.push(child);
+      descendants = descendants.concat(getAllDescendants(child));
+    }
+    return descendants;
+  }
+
+  function highlightElement(element) {
+    element.classList.add("highlighted");
+  }
+
+  function removeHighlight(element) {
+    element.classList.remove("highlighted");
+  }
+
+  function updateElements() {
+    elements = [document.querySelector("main")].concat(
+      getAllDescendants(document.querySelector("main"))
+    );
+  }
+
+  let currentIndex = 0;
+
+  function handleNext() {
+    if (currentIndex < elements.length - 1) {
+      removeHighlight(elements[currentIndex]);
+      currentIndex++;
+      highlightElement(elements[currentIndex]);
+    }
+  }
+
+  function handlePrev() {
+    if (currentIndex > 0) {
+      removeHighlight(elements[currentIndex]);
+      currentIndex--;
+      highlightElement(elements[currentIndex]);
+    }
+  }
+
+  nextButton.addEventListener("click", handleNext);
+  prevButton.addEventListener("click", handlePrev);
+
+  updateElements();
+  highlightElement(elements[currentIndex]); // Initially highlight the main element
+});

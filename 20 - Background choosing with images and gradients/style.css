@@ -132,6 +132,11 @@ footer p a:hover {
   text-decoration: none;
 }
 
+.btn {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
 /* Responsivnes */
 @media (max-width: 1230px) {
   .container h1 {
