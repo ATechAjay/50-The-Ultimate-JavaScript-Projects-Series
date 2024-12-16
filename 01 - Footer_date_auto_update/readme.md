@@ -7,10 +7,11 @@ likes: 241
 retweets: 61
 replies: 17
 ---
+
 ![ATechAjay](https://pbs.twimg.com/profile_images/1485567675111981057/mLsrcZdB_normal.jpg)
 Ajay Yadav 🎯 ([@ATechAjay](https://twitter.com/ATechAjay)) - June 29, 2022 2:51 PM
 
-1️⃣1️⃣ / 5️⃣0️⃣ The Ultimate JavaScript Projects Series!  
+1️⃣1️⃣ / 5️⃣0️⃣ The Ultimate JavaScript Projects Series!
 
 🎉 Footer Date Auto Update
 
@@ -26,7 +27,7 @@ A Thread🧵↓ [pic.twitter.com/NEngT0FJ7g](https://twitter.com/ATechAjay/statu
 
 - So, it's a mini-project just we have to include 3 lines of JavaScript code.
 
- - And the date of the footer will automatically change every year.
+- And the date of the footer will automatically change every year.
 
 - Just we have to call the Date( ) function using the "getFullYear()" method.
 
@@ -36,7 +37,7 @@ A Thread🧵↓ [pic.twitter.com/NEngT0FJ7g](https://twitter.com/ATechAjay/statu
 
 ![3_1542098403537997824](https://pbs.twimg.com/media/FWaiU9-UUAAbLmf.png)
 
-🔔 One more thing, if you want to learn the awesome projects from this series then you should follow this Github repository. 
+🔔 One more thing, if you want to learn the awesome projects from this series then you should follow this Github repository.
 
 🔔 Don't forget to give a star ⭐ to this repository, also if you didn't follow me on GitHub then consider following me.
 
@@ -49,7 +50,7 @@ A Thread🧵↓ [pic.twitter.com/NEngT0FJ7g](https://twitter.com/ATechAjay/statu
 That's all for now, we will meet in the next thread😍
 
 🔔 Follow Me [@ATechAjay](https://twitter.com/ATechAjay)
- For:
+For:
 
 🌐 Web Development
 ✨ JavaScript

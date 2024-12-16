@@ -6,7 +6,7 @@ Build 50 awesome project using JavaScript
 
 ## List of project names you can build with this repo
 
-1. :heavy_check_mark: **[Counter Number App](/01%20-%20Footer%20Date%20Auto%20Update)**
+1. :heavy_check_mark: **[Counter Number App](/01%20-%20Footer_date_auto_update/readme.md)**
 
 1. :heavy_check_mark: **[Modal open & close](/02%20-%20Modal%20or%20Popup%20Window/)**
 
